@@ -51,8 +51,12 @@ This code defines a Convolutional Neural Network (CNN) using Keras for a binary 
 
 -Output Layer: A Dense layer with num_of_classes (2) units and sigmoid activation for binary classification.
 ## Results
-
+**facemask detection with shuffling image**
 The model is capable of predicting whether an image contains a mask or not, demonstrating its ability to learn but does not yet achieve high accuracy, suggesting potential for further optimization.Reason may be train on small dataset
+
+**facemask detection without shuffle**
+The model is demonstrating strong performance in predicting whether an image contains a mask or not. After **10 epochs** of training, the model achieved a training accuracy of **97.50%** and a validation accuracy of **96.20%**, with a training loss of **0.0666** and a validation loss of **0.2181**. These results indicate that the model has effectively learned to distinguish between images of people with and without masks.
+
 ## Future Enhancements
 
 1.Data Augmentation: Implement data augmentation techniques such as rotation, flipping, and zooming to increase dataset variability and improve model generalization.
